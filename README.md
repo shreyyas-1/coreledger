@@ -12,11 +12,11 @@ CoreLedger is my attempt at building a small version of both.
 
 ## Planned features
 
-- [ ] Account and fund-transfer APIs using BigDecimal for exact money handling and idempotent requests to prevent duplicate transfers
-- [ ] Nightly interest calculation for 1,00,000+ simulated accounts using Spring Batch
-- [ ] Restart from the last completed chunk if the job fails, and a unique (account, date) constraint so interest is never credited twice
-- [ ] Tamper-evident audit log using SHA-256 hash chaining, where editing any past entry breaks the chain
-- [ ] Role-based access for Customer, Teller and Auditor using Spring Security and JWT
+- Account and fund-transfer APIs using BigDecimal for exact money handling and idempotent requests to prevent duplicate transfers
+- Nightly interest calculation for 1,00,000+ simulated accounts using Spring Batch
+- Restart from the last completed chunk if the job fails, and a unique (account, date) constraint so interest is never credited twice
+- Tamper-evident audit log using SHA-256 hash chaining, where editing any past entry breaks the chain
+- Role-based access for Customer, Teller and Auditor using Spring Security and JWT
 
 ## Tech stack
 
@@ -33,4 +33,4 @@ Java, Spring Boot, Spring Batch, Spring Security, MySQL, Docker
 
 ## Status
 
-Work in progress. I'll tick off features above as they are completed.
+Work in progress. Currently setting up the project structure and account APIs.
